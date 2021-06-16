@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="dbkiralikaracModelStoreContainer" CdmEntityContainer="dbkiralikaracEntities1">
+    <EntitySetMapping Name="TBLCARS">
+      <EntityTypeMapping TypeName="dbkiralikaracModel.TBLCARS">
+        <MappingFragment StoreEntitySet="TBLCARS">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="BASLIK" ColumnName="BASLIK" />
+          <ScalarProperty Name="FIYAT" ColumnName="FIYAT" />
+          <ScalarProperty Name="ACIKLAMA" ColumnName="ACIKLAMA" />
+          <ScalarProperty Name="KOLTUKSAYI" ColumnName="KOLTUKSAYI" />
+          <ScalarProperty Name="YAKIT" ColumnName="YAKIT" />
+          <ScalarProperty Name="VITES" ColumnName="VITES" />
+          <ScalarProperty Name="GORSEL" ColumnName="GORSEL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

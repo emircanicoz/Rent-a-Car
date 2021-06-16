@@ -1,0 +1,556 @@
+﻿@using arackiralamaproject.Models.Entity
+@model List<TBLCARS>
+@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tilauss Rent a Car</title>
+    <link rel="stylesheet" href="~/starter/assets/css/style-starter.css">
+</head>
+<body>
+ 
+    <section class="w3l-top-menu-4">
+        <header class="top-menu4">
+            <div class="wrapper">
+                <div class="d-grid align-topmenu4">
+                    <div class="top-menu4-left d-grid align-items-menu4">
+                        <ul class="social-icons">
+                            <li class="facebook"><a href="#facebook"><span class="fa fa-facebook"></span></a></li>
+                            <li class="twitter"><a href="#twitter"><span class="fa fa-twitter"></span></a></li>
+                            <li class="instagram"><a href="https://instagram.com/izzetbilbayy"><span class="fa fa-instagram"></span></a></li>
+                            <li class="google-plus"><a href="#google-plus"><span class="fa fa-google-plus"></span></a></li>
+                            <li class="linkedin"><a href="#linkedin"><span class="fa fa-linkedin"></span></a></li>
+                        </ul>
+                    </div>
+                    <div class="top-menu4-right">
+                        <ul class="top-menu-right">
+                            <li><a href="tel:0539 890 75 60"> <span class="fa fa-phone"> </span>+90 539 890 75 60</a> <span>Telefon Numaramız</span> </li>
+                            <li><a href="mailto:mail@estate.com"> <span class="fa fa-envelope-open-o"> </span>iletisim@tilauss.com</a> <span>Mail Adresimiz</span> </li>
+                            <li><p> <span class="fa fa-clock-o"> </span>09:00 - 22:00</p> <span>Çalışma Saatlerimiz</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </section>
+   
+    <section class="w3l-header-4">
+        <header id="headers4-block">
+            <div class="wrapper">
+                <div class="d-grid nav-mobile-block header-align">
+                    <div class="logo">
+                        <a class="brand-logo" href="index"><span>Tilauss</span></a>
+                        
+                    </div>
+                    <input type="checkbox" id="nav" />
+                    <label class="nav" for="nav"></label>
+                    <nav>
+                        <label for="drop" class="toggle">Menu</label>
+                        <input type="checkbox" id="drop">
+                        <ul class="menu">
+                            <li><a href="index">Ana Sayfa</a></li>
+                            <li><a href="about">Hakkında</a></li>
+                            <li><a href="contact">İletişim</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+    </section>
+    
+    
+    <section class="w3l-covers-4">
+        <div id="covers4-block">
+            
+            <div class="main-slider">
+                <div class="csslider infinity" id="slider1">
+                    <input type="radio" name="slides" checked="checked" id="slides_1" />
+                    <input type="radio" name="slides" id="slides_2" />
+                    <input type="radio" name="slides" id="slides_3" />
+                    <input type="radio" name="slides" id="slides_4" />
+                    <ul>
+                        <li class="slider-bg-1">
+                            <div class="slider-info-wrapper">
+                                <div class="slider-info">
+                                    <div class="d-grid slide-two-col">
+                                        <div class="slide-left-text">
+                                            <h3>Ekonomik Araçlar </h3>
+                                            <h3><span>150₺'den başlayan fiyatlarla</span></h3>
+                                            <p>
+                                                Birbirinden ekonomik araçlarla hizmetinizdeyiz.
+                                            </p>
+                                            <a href="contact" class="btn button-style1">Bize Ulaşın</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="slider-bg-2">
+                            <div class="slider-info-wrapper">
+                                <div class="slider-info">
+                                    <div class="d-grid slide-two-col">
+                                        <div class="slide-left-text">
+                                            <h3>Konforunuzu Düşünüyoruz </h3>
+                                            <h3><span>500₺'den başlayan fiyatlarla</span></h3>
+                                            <p>
+                                                Seyahatlerinizde konfor ve performans arıyorsanız araçlarımız tam size göre.
+                                            </p>                                            
+                                            <a href="contact" class="btn button-style1">Bize ulaşın</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="slider-bg-3">
+                            <div class="slider-info-wrapper">
+                                <div class="slider-info">
+                                    <div class="d-grid slide-two-col">
+                                        <div class="slide-left-text">
+                                            <h3>Hayalinizdeki Premium Otomobiller</h3>
+                                            <h3><span>1000₺'den başlayan fiyatlarla</span></h3>
+                                            <p>
+                                                Birbirinden lüks ve premium araçlarla hizmetinizdeyiz
+                                            </p>
+                                            <a href="contact" class="btn button-style1">Bize Ulaşın</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="arrows">
+                        <label for="slides_1"></label>
+                        <label for="slides_2"></label>
+                        <label for="slides_3"></label>
+                    </div>
+                    <div class="navigation">
+                        <div>
+                            <label for="slides_1"></label>
+                            <label for="slides_2"></label>
+                            <label for="slides_3"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      
+        </div>
+    </section>
+   
+    <section class="w3l-feature-8">
+        <div class="features-main">
+            <div class="wrapper">
+                <div class="features">
+                    <div class="feature-1">
+                        <div class="feature-body">
+                            <div class="feature-images">
+                                <span class="fa fa-rebel"></span>
+                            </div>
+                            <div class="feature-info">
+                                <a href="about">
+                                    <h3 class="feature-titel">Misyonumuz</h3>
+                                </a>
+                                <p class="feature-text">
+                                    Sizlere uygun fiyatlı, yüksek konforlu ve daha da önemlisi üstün hijyen standarlarında araçlar sunmak
+                                </p></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-2">
+                        <div class="feature-body">
+                            <div class="feature-images">
+                                <span class="fa fa-line-chart"></span>
+                            </div>
+                            <div class="feature-info">
+                                <a href="https://www.anitkabir.tsk.tr">
+                                    <h3 class="feature-titel">Vizyonumuz</h3>
+                                    <p class="feature-text">
+                                        Müşteri memnuniyeti temelli kuruluşumuz, sizlere kalite sunmak için 7/24 çalışıyoruz.
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-3">
+                        <div class="feature-body">
+                            <div class="feature-images">
+                                <span class="fa fa-rocket"></span>
+                            </div>
+                            <div class="feature-info">
+                                <a href="about">
+                                    <h3 class="feature-titel">Memnuniyet</h3>
+                                    <p class="feature-text">
+                                        2020 yılında en çok kiralama yapan şirken ünvanını elimizde bulunduruyoruz. Bizi tercih ettiğiniz için sonsuz teşekkürler.
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="w3l-grids-4">
+        <div id="grids4-block">
+            <div class="wrapper">
+                <h3 class="heading-title">Araçlarımız</h3>
+                <div class="owl-carousel owl-theme">
+                    @foreach (var X in Model)
+                    {
+
+
+<div class="item">
+                        <div class="grids4-info">
+                            <a href="#properties-single"><img src="@X.GORSEL" alt="" /></a>
+                            <div class="info-bg">
+                                <h5><a href="#properties-single">@X.BASLIK</a></h5>
+                                <span class="price">@X.FIYAT₺</span>
+                                <p>@X.ACIKLAMA</p>
+                                <ul>
+                                    <li><span class="fa fa-user"></span> @X.KOLTUKSAYI</li>
+                                    <li><span class="fa fa-automobile"></span> @X.YAKIT</li>
+                                    <li><span class="fa fa-gears"></span> @X.VITES</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    }
+
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    <script src="~/starter/assets/js/jquery-3.3.1.min.js"></script> 
+    <script src="~/starter/assets/js/owl.carousel.js"></script> 
+
+    <script>
+    $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 0,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: true
+                    },
+                    600: {
+                        items: 2,
+                        nav: false,
+                        margin: 20
+                    },
+                    1000: {
+                        items: 3,
+                        nav: true,
+                        loop: true,
+                        margin: 20
+                    }
+                }
+            })
+        })</script>
+
+
+    <div class="w3l-products-4">
+  
+        <div id="products4-block" class="text-center">
+            <h3 class="heading-title">Kategoriler</h3>
+            <div class="wrapper">
+
+                <input id="tab1" type="radio" name="tabs" checked>
+                <label class="tabtle" for="tab1">Ekonomik</label>
+
+                <input id="tab2" type="radio" name="tabs">
+                <label class="tabtle" for="tab2">Konfor</label>
+
+                <input id="tab3" type="radio" name="tabs">
+                <label class="tabtle" for="tab3">Premium</label>
+
+                <input id="tab4" type="radio" name="tabs">
+                <label class="tabtle" for="tab4">Luxury</label>
+
+                <section id="content1" class="tab-content text-left">
+                    <div class="d-grid grid-col-3">
+                        <div class="product">
+                            <a href="#properties-single"><img src="~/starter/assets/images/egea.jpg" class="img-responsive" alt="" /></a>
+                           
+                            <div class="info-bg">
+                                <h5><a href="#properties-single">FIAT EGEA</a></h5>
+                                <span class="price">150₺/Günlük</span>
+                                <p>Uygun bütçeli, düşük yakıt tüketimiyle fiyat performans aracı.</p>
+                                <ul>
+                                    <li><span class="fa fa-user"></span> 5</li>
+                                    <li><span class="fa fa-car"></span> Benzin</li>
+                                    <li><span class="fa fa-gears"></span> Manuel</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <a href="#properties-single"><img src="~/starter/assets/images/citroen.jpg" class="img-responsive" alt="" /></a>
+                          
+                            <div class="info-bg">
+                                <h5><a href="#properties-single">CITROEN C-Elsyee</a></h5>
+                                <span class="price">$ 250₺/Günlük</span>
+                                <p>Uygun bütçeli, düşük yakıt tüketimiyle fiyat performans aracı.</p>
+                                <ul>
+                                    <li><span class="fa fa-user"></span> 5</li>
+                                    <li><span class="fa fa-car"></span> Dizel</li>
+                                    <li><span class="fa fa-gears"></span> Manuel</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <a href="#properties-single"> <img src="~/starter/assets/images/renault.jpg" class="img-responsive" alt="" /></a>
+                           
+                            <div class="info-bg">
+                                <h5><a href="#properties-single">RENAULT CLIO</a></h5>
+                                <span class="price">$ 210₺/Günlük</span>
+                                <p>Uygun bütçeli, düşük yakıt tüketimiyle fiyat performans aracı.</p>
+                                <ul>
+                                    <li><span class="fa fa-user"></span> 5</li>
+                                    <li><span class="fa fa-car"></span> Dizel</li>
+                                    <li><span class="fa fa-gears"></span> Manuel</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="content2" class="tab-content text-left">
+                    <div class="d-grid grid-col-3">
+                        <div class="product">
+                            <a href="#properties-single"><img src="~/starter/assets/images/passat.jpg" class="img-responsive" alt="" /></a>
+                           
+                            <div class="info-bg">
+                                <h5><a href="#properties-single">VW PASSAT</a></h5>
+                                <span class="price">550₺</span>
+                                <p>Seyahatlerinizde konfor ve performans arıyorsanız araçlarımız tam size göre.</p>
+                                <ul>
+                                    <li><span class="fa fa-user"></span> 5</li>
+                                    <li><span class="fa fa-car"></span> Dizel</li>
+                                    <li><span class="fa fa-gears"></span> Otomatik</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <a href="#properties-single"><img src="~/starter/assets/images/bmw.jpg" class="img-responsive" alt="" /></a>
+                          
+                            <div class="info-bg">
+                                <h5><a href="#properties-single">BMW 520i xDrive</a></h5>
+                                <span class="price">650₺</span>
+                                <p>Seyahatlerinizde konfor ve performans arıyorsanız araçlarımız tam size göre</p>
+                                <ul>
+                                    <li><span class="fa fa-user"></span> 4</li>
+                                    <li><span class="fa fa-car"></span> Benzin</li>
+                                    <li><span class="fa fa-gears"></span> Otomatik</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <a href="#properties-single"><img src="~/starter/assets/images/audi.jpg" class="img-responsive" alt="" /></a>
+                           
+                            <div class="info-bg">
+                                <h5><a href="#properties-single">AUDI A4 QUATTRO</a></h5>
+                                <span class="price">600₺</span>
+                                <p>Seyahatlerinizde konfor ve performans arıyorsanız araçlarımız tam size göre</p>
+                                <ul>
+                                    <li><span class="fa fa-user"></span> 5</li>
+                                    <li><span class="fa fa-car"></span> Dizel</li>
+                                    <li><span class="fa fa-gears"></span>Otomatik</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="content3" class="tab-content text-left">
+                    <div class="d-grid grid-col-3">
+                        <div class="product">
+                            <a href="#properties-single"><img src="~/starter/assets/images/volvo.jpg" class="img-responsive" alt="" /></a>
+                            
+                            <div class="info-bg">
+                                <h5><a href="#properties-single">VOLVO XC90</a></h5>
+                                <span class="price">1000₺</span>
+                                <p>Premium araçlarımızla hizmetinizdeyiz</p>
+                                <ul>
+                                    <li><span class="fa fa-user"></span> 7</li>
+                                    <li><span class="fa fa-car"></span> Benzin&Hybrid</li>
+                                    <li><span class="fa fa-gears"></span> Otomatik</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <a href="#properties-single"><img src="~/starter/assets/images/mercedes.jpg" class="img-responsive" alt="" /></a>
+                            
+                            <div class="info-bg">
+                                <h5><a href="#properties-single">Mercedes S350 4matic</a></h5>
+                                <span class="price">1200₺</span>
+                                <p>Premium araçlarımızla hizmetinizdeyiz</p>
+                                <ul>
+                                    <li><span class="fa fa-user"></span> 4</li>
+                                    <li><span class="fa fa-car"></span> Benzin</li>
+                                    <li><span class="gear"></span> Otomatik</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <a href="#properties-single"> <img src="~/starter/assets/images/porsche.jpg" class="img-responsive" alt="" /></a>
+                          
+                            <div class="info-bg">
+                                <h5><a href="#properties-single">PORSHE CAYENNE</a></h5>
+                                <span class="price">1350₺</span>
+                                <p>Premium araçlarımızla hizmetinizdeyiz</p>
+                                <ul>
+                                    <li><span class="fa fa-user"></span> 5</li>
+                                    <li><span class="fa fa-car"></span> Benzin</li>
+                                    <li><span class="fa fa-gears"></span> Otomatik</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="content4" class="tab-content text-left">
+                    <div class="d-grid grid-col-3">
+                        <div class="product">
+                            <a href="#properties-single"><img src="~/starter/assets/images/maserati.jpg" class="img-responsive" alt="" /></a>
+                            
+                            <div class="info-bg">
+                                <h5><a href="#properties-single">MASERATI GHIBLI</a></h5>
+                                <span class="price">2000₺</span>
+                                <p>Lüks yaşamınıza ortak</p>
+                                <ul>
+                                    <li><span class="fa fa-user"></span> 4</li>
+                                    <li><span class="fa fa-car"></span> Benzin</li>
+                                    <li><span class="fa fa-gears"></span> Otomatik</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <a href="#properties-single"><img src="~/starter/assets/images/bentley.jpg" class="img-responsive" alt="" /></a>
+                           
+                            <div class="info-bg">
+                                <h5><a href="#properties-single">BENTLEY CONTINENTAL GT</a></h5>
+                                <span class="price">2200₺</span>
+                                <p>Lüks yaşamınıza ortak</p>
+                                <ul>
+                                    <li><span class="fa fa-user"></span> 4</li>
+                                    <li><span class="fa fa-car"></span> Benzin</li>
+                                    <li><span class="fa fa-gears"></span> Otomatik</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <a href="#properties-single"><img src="~/starter/assets/images/wraight.jpg" class="img-responsive" alt="" /></a>
+                          
+                            <div class="info-bg">
+                                <h5><a href="#properties-single">ROLLS ROYCE WRAIHT</a></h5>
+                                <span class="price">2500₺</span>
+                                <p>Lüks yaşamınıza ortak</p>
+                                <ul>
+                                    <li><span class="fa fa-user"></span> 4</li>
+                                    <li><span class="fa fa-car"></span> Benzin</li>
+                                    <li><span class="fa fa-gears"></span> Otomatik</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+       
+    </div>
+    <section class="w3l-companies-hny-6">
+     
+
+
+
+
+    
+    <section class="w3l-subscribe-1">
+        <div class="wrapper">
+            <h4>Size özel indirimlerden yararlanmak için</h4>
+            <h3 class="heading-title">Haber bültenine abone olun</h3>
+            <div class="form">
+                <form action="#" method="post" class="subscribe-form">
+                    <input type="email" name="email" placeholder="Email Adresinizi Yazınız" required>
+                    <button class="btn">Onayla</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <section class="w3l-footer-29-main">
+        <div class="footer-29">
+            <div class="wrapper">
+                <div class="d-grid grid-col-4 footer-top-29">
+                    <div class="footer-list-29 footer-1">
+                        <h6 class="footer-title-29">Bize Ulaşın</h6>
+                        <ul>
+                            <li><p><span class="fa fa-map-marker"></span> Ofisimiz: Paşakent, Zirai Donatım Sk., 10200 Bandırma/Balıkesir</p></li>
+                            <li><a href="tel:+90 539 890 75 60"><span class="fa fa-phone"></span> 0539 890 75 60</a></li>
+                            <li><a href="mailto:iletisim@tilauss.com" class="mail"><span class="fa fa-envelope-open-o"></span> iletisim@tilauss.com</a></li>
+                        </ul>
+                        <div class="main-social-footer-29">
+                            <a href="#facebook" class="facebook"><span class="fa fa-facebook"></span></a>
+                            <a href="#twitter" class="twitter"><span class="fa fa-twitter"></span></a>
+                            <a href="#instagram" class="instagram"><span class="fa fa-instagram"></span></a>
+                            <a href="#google-plus" class="google-plus"><span class="fa fa-google-plus"></span></a>
+                            <a href="#linkedin" class="linkedin"><span class="fa fa-linkedin"></span></a>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                <div class="d-grid grid-col-2 bottom-copies">
+                    <p class="copy-footer-29">© 2019 BANU. Tüm hakları saklıdır.  | Designed by <a href="https://instagram.com/icozemir">Tilauss</a></p>
+                    <ul class="list-btm-29">
+                        <li><a href="#link">Privacy policy</a></li>
+                        <li><a href="#link">Terms of service</a></li>
+                        <li>
+                            <select name="carlist" form="carform">
+                                <option value="Language">English</option>
+                            </select>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <button onclick="topFunction()" id="movetop" title="Go to top">
+        <span class="fa fa-angle-up"></span>
+    </button>
+    <script>
+    
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("movetop").style.display = "block";
+            } else {
+                document.getElementById("movetop").style.display = "none";
+            }
+        }
+
+      
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }</script>
+   
+</body>
+</html>
